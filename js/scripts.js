@@ -40,10 +40,11 @@ function divisibleBy5 (ob) {
 
 //print out object elements
 function printObjectElements(ob) {
-	var liNode = document.createElement("li");
 	var textnode;
 
 	for (i = 0; i < ob.length; i++) {
+		var liNode = document.createElement("li");
+
 		textnode = document.createTextNode(ob[i]);
 		liNode.appendChild(textnode);
 		document.getElementById("division-list").appendChild(liNode);
