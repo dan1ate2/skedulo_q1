@@ -1,11 +1,11 @@
 // main function
-function zeroToHundred() {
-	var zeroToHundred = Array.from(Array(100).keys());
+function oneToHundred() {
+	var oneToHundred = Array.from(Array(101).keys()).slice(1);
 
-	divisibleBy4or5(zeroToHundred);
-	divisibleBy4(zeroToHundred);
-	divisibleBy5(zeroToHundred);
-	printObjectElements(zeroToHundred);
+	divisibleBy4or5(oneToHundred);
+	divisibleBy4(oneToHundred);
+	divisibleBy5(oneToHundred);
+	printObjectElements(oneToHundred);
 }
 
 // work out what elements in object are divisible by both 4 and 5
